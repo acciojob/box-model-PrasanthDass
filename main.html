@@ -1,22 +1,45 @@
 <!DOCTYPE html>
-
-<html>
-
+<html lang="en">
 <head>
-	<link rel="stylesheet" href="styles.css">
+  <meta charset="UTF-8"/>
+  <title>Traffic Light Blocks</title>
+  <style>
+    .container {
+      width: 500px;
+      padding: 28px 0;
+      background: #d3d3d3;
+      border-radius: 40px;
+      border: 3px solid #000;
+      margin: 40px auto;
+      text-align: center;
+      box-sizing: border-box;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      gap: 32px;
+    }
+    .green, .yellow, .red {
+      width: 110px;
+      height: 110px;
+      border-radius: 50%;
+      display: inline-block;
+    }
+    .green {
+      background: #31812d;
+    }
+    .yellow {
+      background: #fffa5c;
+    }
+    .red {
+      background: #ee3322;
+    }
+  </style>
 </head>
-
 <body>
-	<!-- the entire body must be written by student -->
-	<div class="container">
-        <!-- The blocks are ordered Green, Yellow, Red based on the image -->
-        <div class="green"></div>
-        <div class="yellow"></div>
-        <div class="red"></div>
-    </div>
-    <script type="text/javascript" src="./script.js">
-</script>
-
+  <div class="container">
+    <div class="green"></div>
+    <div class="yellow"></div>
+    <div class="red"></div>
+  </div>
 </body>
-
 </html>
