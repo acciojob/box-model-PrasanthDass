@@ -1,0 +1,54 @@
+/*  your css code here. If applicable */
+/* Basic Reset and Centering */
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    margin: 0;
+    background-color: #f0f0f0;
+}
+
+/* Container Styling */
+.container {
+    /* Dimensions and Appearance based on image */
+    width: 250px; 
+    padding: 20px; /* Padding for the box model */
+    background-color: #bdbdbd; /* Light gray background */
+    border: 3px solid #000; /* Border for the box model */
+    border-radius: 30px; /* Rounded corners */
+    
+    /* Center the blocks horizontally inside the container */
+    text-align: center; 
+
+    /* Use display flex for easy vertical centering of contents */
+    display: flex;
+    justify-content: space-around; /* Distributes space evenly */
+    align-items: center; /* Vertically center the blocks */
+}
+
+/* Generic Block Styling (All colored divs) */
+.container div {
+    width: 60px; /* Specific size for the circle */
+    height: 60px; /* Specific size for the circle */
+    border-radius: 50%; /* Makes the div a perfect circle */
+    
+    /* The blocks should be displayed inline, but since we are using flex on the parent, 
+       they behave like inline-blocks. If flex wasn't used, we would use: 
+       display: inline-block; 
+    */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5); /* Simple shadow for 3D effect */
+}
+
+/* Specific Color Styles */
+.green {
+    background-color: #4CAF50; /* Darker Green for traffic lights */
+}
+
+.yellow {
+    background-color: #FFEB3B; /* Yellow */
+}
+
+.red {
+    background-color: #F44336; /* Red */
+}
